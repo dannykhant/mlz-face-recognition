@@ -1,0 +1,7 @@
+services:
+  - type: web
+    plan: free
+    region: singapore
+    name: face-recognition-api
+    runtime: docker
+    rootDir: .
