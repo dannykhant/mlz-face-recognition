@@ -124,6 +124,7 @@ The following libraries are required to run the face recognition project:
 
 - torch
 - torchvision
+- onnxruntime
 - numpy
 - pandas
 - scikit-learn
@@ -132,6 +133,7 @@ The following libraries are required to run the face recognition project:
 - pillow
 - tqdm
 - jupyter
+- fastapi[standard]
 - requests
 
 *Dependencies can be installed using any Python package manager (e.g., pip, pipenv), or by following the installation steps below.*
