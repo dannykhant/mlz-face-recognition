@@ -202,7 +202,9 @@ python test.py
 
 ## Reproducibility
 
-After installing all required dependencies, the results of this face recognition project can be reproduced by running the training notebook or by executing the provided scripts. The `train.py` script is used to train the model and save the best-performing checkpoint, while `predict.py` is used to serve the trained model via a FastAPI application, following the instructions in this repository.
+After installing all required dependencies, first download and prepare the dataset by running the `download_data.sh` script. This ensures that all required data is available in the correct directory structure.
+
+Once the data is downloaded, the results of this face recognition project can be reproduced by running the training notebook or by executing the provided scripts. The `train.py` script is used to train the model and save the best-performing checkpoint, while `predict.py` is used to serve the trained model via a FastAPI application, following the instructions in this repository.
 
 
 ## Model Deployment
