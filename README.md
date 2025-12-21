@@ -207,7 +207,7 @@ fastapi run predict.py
 Once the server is running, open your browser and navigate to
 http://127.0.0.1:8000/docs to access the interactive API documentation and test the /predict endpoint.
 
-Alternatively, you can test the API directly from the terminal using curl:
+Alternatively, you can test the API directly from the terminal using `curl`:
 ```bash
 curl -X 'POST' \
   'http://127.0.0.1:8000/predict' \
@@ -217,6 +217,12 @@ curl -X 'POST' \
     "url": "http://bit.ly/4j4Y0Uo"
   }'
 ```
+
+You can also verify the deployment by running the provided test script, which sends an image URL to the API and checks the response:
+```bash
+python test.py
+```
+This script provides a simple way to confirm that the service is running correctly and that the model inference pipeline is working end to end.
 
 
 ## Containerization
