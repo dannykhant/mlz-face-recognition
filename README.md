@@ -102,7 +102,9 @@ A systematic set of experiments was conducted across different combinations of e
 - Larger embedding dimensions improved model capacity but required careful learning rate selection.
 - Unfreezing deeper backbone blocks improved validation accuracy when paired with a moderate learning rate.
 
-The best configuration achieved a **validation accuracy of approximately 95%**.
+The best configuration achieved a **validation accuracy of approximately 68%**.
+
+![hyperparameter-tuning](images/tuning.png)
 
 ### Training Process
 The final model was trained for **10 epochs**. During training:
@@ -112,6 +114,8 @@ The final model was trained for **10 epochs**. During training:
 - The best-performing model checkpoint was saved based on validation accuracy.
 
 Later epochs showed slight fluctuations in validation loss, indicating mild overfitting, which is expected given the limited dataset size.
+
+![training](images/training.png)
 
 ### Final Model Selection
 The model checkpoint with the highest validation accuracy was selected as the final model. This ensures that the chosen model generalizes well to unseen data rather than simply fitting the training set.
