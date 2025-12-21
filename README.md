@@ -169,6 +169,14 @@ Once activated, you can run the training notebooks or scripts for model training
 
 ## Scripts
 
+### download_data.sh
+
+This script is used to download and prepare all required datasets for the project. It should be executed before running any training scripts or notebooks to ensure that the data is available in the expected directory structure.
+```bash
+./download_data.sh
+```
+Running this script ensures a consistent and reproducible setup across different environments.
+
 ### train.py
 Trains the face recognition model using the prepared dataset. This script handles data loading, model initialization, training, validation, and saves the best-performing model checkpoint for later use.
 
